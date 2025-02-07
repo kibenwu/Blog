@@ -1,0 +1,15 @@
+backend:
+  name: github
+  repo: kibenwu/Blog  # 你的 GitHub 用户名和仓库名
+  branch: main  # 选择你想要编辑的分支
+media_folder: "static/img"  # 图片上传路径
+public_folder: "/img"
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
