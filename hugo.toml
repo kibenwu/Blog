@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Kiven Wu'
+theme = "hugo-theme-m10c"
